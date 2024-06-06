@@ -8,6 +8,23 @@ def get_count(num_list):
 num_list=[1,1,5,100,-20,-20,6,0,0]
 print(get_count(num_list))
 
+# 2nd method
+
+def check_adjacent_duplicates(numbers_list):
+    adjacent_count = 0
+    previous_number = 0
+
+    for number in numbers_list:
+        if previous_number == number:
+            adjacent_count += 1
+        previous_number = number
+
+    return adjacent_count
+
+
+numbers_list = [1, 1, 5, 100, -20, -20, 6, 0, 0]
+adjacent_count = check_adjacent_duplicates(numbers_list)
+print("Count of adjacent occurrences:", adjacent_count)
 
     
  
