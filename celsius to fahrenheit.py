@@ -2,9 +2,11 @@ def fahrenheit_to_celsius(fahrenheit):
     celsius=0
     celsius=(fahrenheit-32)*5/9
     return celsius
- 
+
 result=fahrenheit_to_celsius(50)
 print(result)
+
+
 
 def celsius_to_fahrenheit(celsius):
     fahrenheit=0
